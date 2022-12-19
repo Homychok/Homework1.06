@@ -4,11 +4,13 @@ public class Book {
     private String fullName;
     private int numberOfPages;
     private int yearOfRelease;
-Author author = new Author();
-public Book(String authorName, String fullName, int numberOfPages, int yearOfRelease) {
+    private String authorName;
+
+    public Book(String authorName, String fullName, int numberOfPages, int yearOfRelease) {
         this.fullName = fullName;
         this.numberOfPages = numberOfPages;
         this.yearOfRelease = yearOfRelease;
+        this.authorName = authorName;
     }
 
     public String getFullName() {
@@ -23,12 +25,12 @@ public Book(String authorName, String fullName, int numberOfPages, int yearOfRel
         return yearOfRelease;
     }
 
-    public void setYearOfRelease(int yearOfRelease) {
-        this.yearOfRelease = yearOfRelease;
+    public String getAuthorName() {
+        return authorName;
+    }
+        public void setYearOfRelease ( int yearOfRelease){
+            this.yearOfRelease = yearOfRelease;
+        }
     }
 
-    public String getAuthorName() {
-        return author.getAuthorName();
-    }
-}
 
